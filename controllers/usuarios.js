@@ -22,12 +22,10 @@ const usuariosGet = async ( req = request, res = response ) => {
             .limit( Number( limite ) )
     ]);
 
-
     res.json({
         total,
         usuarios
     });
-
 }
 
 const usuariosPost = async ( req = request, res = response ) => {
@@ -66,7 +64,6 @@ const usuariosPut = async( req = request, res = response ) => {
 }
 
 const usuariosPatch = ( req = request, res = response ) => {
-
     res.json({
         msg: 'patch API - usuariosPatch'
     });
